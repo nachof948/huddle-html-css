@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 18px;
+
+}
+/*SECTION 1*/
+.section1{
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-color: #edfbfe;
+}
+.navegador{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+.navegador img{
+    width: 150px;
+    height: 25px;
+}
+.navegador button{
+    color: var(--Very-Dark-Cyan);
+    padding: 9px 45px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    box-shadow: 0 0 5px grey;
+    cursor: pointer;
+    transition: all 250ms;
+}
+.navegador button:hover{
+    opacity: 0.5;
+}
+.encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    padding: 35px 0px;
+    margin-bottom: 15px;
+}
+.encabezado img{
+    width: 45%;
+    height: 45%;
+}
+.titulos{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 40%;
+}
+.titulos h2{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    opacity: 0.9;
+    font-size: 2.5rem;
+    width: 90%;
+}
+.titulos p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+.titulos button{
+    background-color: var(--Pink);
+    border: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 15px 45px;
+    border-radius: 25px;
+    width: 250px;
+    transition: all 250ms;
+}
+.titulos button:hover{
+    opacity: 0.5;
+    cursor: pointer;;
+}
+/*TARJETAS*/
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 75px;
+    padding-inline: 75px;
+    margin-bottom: 250px;
+}
+.trj1, .trj2, .trj3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(211, 202, 202);
+    padding: 50px;
+}
+.trj1 h2, .trj2 h2, .trj3 h2{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    opacity: 0.8;
+    font-size: 2rem;
+}
+.trj1 p, .trj2 p, .trj3 p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--Grayish-Blue);
+    width: 450px;
+}
+.tarjetas img{
+    width: 350px;
+    height: 320px;
+}
+.titulostrj{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/*END TARJETAS*/
+
+/*COMUNICADO*/
+.comunicado{
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 5px grey;
+    width: fit-content;
+    transform: translateY(35%);
+    z-index: 3;
+}
+.comunicados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 45px 190px;
+}
+.comunicados h2{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    opacity: 0.8;
+    font-size: 1.5rem;
+}
+.comunicados button{
+    background-color: var(--Pink);
+    border: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    padding: 18px 80px;
+    border-radius: 25px;
+    transition: all 250ms;
+}
+.comunicados button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+/*END COMUNICADO*/
+/*FOOTER*/
+.footer{
+    background-color: var(--Very-Dark-Cyan);
+    padding-top: 100px;
+    color: white;
+    padding-inline: 30px;
+}
+.logo{
+    filter: invert(100%) sepia(27%) saturate(4%) hue-rotate(120deg) brightness(101%) contrast(101%);
+}
+.sobre-nosotros{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+.contactos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contacto{
+    display: flex;
+    gap: 15px;
+}
+.ubicacion{
+    transform: translateY(35%);
+    width: 12px !important; 
+}
+.contacto1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contacto1 p{
+    width: 300px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0.8;
+}
+.contacto img{
+    width: 15px;
+    height: 15px;
+}
+.contacto p{
+    width: 300px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0.8;
+}
+.enlaces1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.enlaces1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0.8;
+    transition: all 250ms;
+}
+.enlaces1 a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+.enlaces2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.enlaces2 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: white;
+    opacity: 0.8;
+    transition: all 250ms;
+}
+.enlaces2 a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.redes a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 13px;
+    margin-right: 5px;
+    transition: all 250ms;
+}
+.redes a:hover{
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+}
+.copyright p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+/*END FOOTER*/
+/*MEDIA QUERY*/
+@media screen and (max-width:600px) {
+    .section1{
+        background-image: url(./images/bg-hero-mobile.svg);
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .encabezado{
+    flex-direction: column;
+    gap: 40px;
+    }
+    .navegador{
+        padding: 25px 15px;
+    }
+    .navegador img{
+        width: 120px;
+        height: 21px;
+    }
+    .navegador button{
+        padding: 5px 20px;
+        font-weight: 400;
+    }
+    .titulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titulos h2{
+        font-size: 1.7rem;
+        text-align: center;
+        width: 300px;
+    }
+    .titulos p{
+        text-align: center;
+        width: 275px;
+    }
+    .encabezado img{
+        width: 260px;
+        height: 180px;
+    }
+    /*MEDIA QUERY SECTION 1 END*/
+
+/*END SECTION 1*/
+
+    /*TARJETAS*/
+@media screen and (max-width:1018px) {
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trj1{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+}
+    .trj2{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .trj3{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:574px) {
+    .tarjetas{
+    padding-inline: 15px;
+    margin-bottom: 50px;
+    }
+    .tarjetas img{
+        width: 80%;
+        height: 80%;
+    }
+    .trj1 h2, .trj2 h2, .trj3 h2{
+        font-family: 'Open Sans';
+        font-weight: 700;
+        opacity: 0.9;
+        font-size: 1.15rem;
+        width: 100%;
+    }
+    .trj1 p, .trj2 p, .trj3 p{
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 0.8rem;
+        color: var(--Grayish-Blue);
+        width: 95%;
+    }
+}
+    /*END TARJETAS*/
+/*FOOTER*/
+@media screen and (max-width:890px) {
+    .comunicado{
+        width: 95%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .comunicados{
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px 10px;
+    }
+    .comunicados h2{
+        width: 350px;
+        font-size: 1.25rem;
+    }
+    .comunicados button{
+        font-size: 0.7rem;
+        width: 80%;
+        padding: 3% 5%;
+    }
+    .sobre-nosotros{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        width: 100%;
+    }
+    .contacto p{
+        width: 80%;
+    }
+    .enlaces2{
+        transform: translateY(-13%);
+    }
+    .copyright{
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin-top: 15px;
+    }
+}
+}
